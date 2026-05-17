@@ -1,5 +1,9 @@
 # HabitBar
 
+<p align="center">
+  <img src="assets/app-icon.png" alt="HabitBar app icon" width="160">
+</p>
+
 HabitBar is a native macOS habit tracker built around a menu bar popover. It is
 designed for fast daily check-ins: open the menu bar item, review today's habits,
 log progress, inspect recent history, and make small edits without switching to a
