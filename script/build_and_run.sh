@@ -26,7 +26,11 @@ if [[ "$MODE" == "--verify-ui" || "$MODE" == "verify-ui" || "$MODE" == "--ui-smo
 fi
 
 if [[ "$BUILD_CONFIGURATION" == "release" ]]; then
-  BUILD_FLAGS=(-c release "${BUILD_FLAGS[@]}")
+  if [[ ${#BUILD_FLAGS[@]} -gt 0 ]]; then
+    BUILD_FLAGS=(-c release "${BUILD_FLAGS[@]}")
+  else
+    BUILD_FLAGS=(-c release)
+  fi
 fi
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
