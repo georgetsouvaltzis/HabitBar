@@ -1,13 +1,23 @@
 # HabitBar
 
 <p align="center">
-  <img src="assets/app-icon.png" alt="HabitBar app icon" width="160">
+  <img src="docs/assets/app-icon.png" alt="HabitBar app icon" width="160">
 </p>
 
 HabitBar is a native macOS habit tracker built around a menu bar popover. It is
 designed for fast daily check-ins: open the menu bar item, review today's habits,
 log progress, inspect recent history, and make small edits without switching to a
 full dashboard.
+
+## Sample Screen
+
+<p align="center">
+  <img
+    src="docs/assets/habitbar-popover.png"
+    alt="HabitBar menu bar popover showing today's habits and summary metrics"
+    width="431"
+  >
+</p>
 
 ## Features
 
@@ -53,6 +63,12 @@ Verify the release bundle starts:
 
 The run script creates `dist/HabitBar.app`, copies the app icon into the bundle,
 and stops any existing `HabitBar` process before launching.
+
+## Landing Page
+
+The static GitHub Pages landing page lives at `docs/index.html`, with page
+assets under `docs/assets/`. It has no build step and can be hosted from the
+repository `docs/` folder.
 
 ## Tests
 
