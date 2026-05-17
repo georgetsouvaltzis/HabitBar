@@ -19,6 +19,18 @@ It kills an existing `HabitBar` process before launching.
 The bundle copies `Sources/HabitBar/Resources/AppIcon.icns` into
 `Contents/Resources` and declares it as `CFBundleIconFile`.
 
+Build and run the release bundle:
+
+```sh
+./script/build_and_run.sh --release
+```
+
+Verify the release bundle starts:
+
+```sh
+./script/build_and_run.sh --verify-release
+```
+
 ## Tests
 
 Run unit tests:
